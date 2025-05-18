@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна робота 2</title>
+  <link rel="stylesheet" href="lab2.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ReyShop</div>
+
+      <div class="burger" tabindex="0" aria-label="Toggle navigation" role="button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active">Головна</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li>
+          <a href="#" tabindex="0">Послуги ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Зателефонувати</a>
+            <a href="#">Написати</a>
+          </div>
+        </li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакти</a></li>
+        <li>
+          <form class="search-form" role="search">
+            <input type="text" placeholder="Пошук..." aria-label="Пошук" />
+            <button type="submit">🔍</button>
+          </form>
+        </li>
+    </ul>
+    </div>
+  </nav>
+
+  <script>
+    const burger = document.querySelector(".burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+
+    burger.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        navLinks.classList.toggle("open");
+      }
+    });
+  </script>
+</body>
+</html>
