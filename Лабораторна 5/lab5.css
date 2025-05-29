@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 2em auto;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border-radius: 8px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+.controls button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background: #666;
+}
+
+.counter {
+    font-size: 1em;
+}
+
+.dots {
+    text-align: center;
+    background: #111;
+    padding: 0.5em 0;
+}
+
+.dots span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #717171;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #444;
+    width: 100%;
+}
+
+.progress {
+    height: 100%;
+    background: #00c853;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+}
