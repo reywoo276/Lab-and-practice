@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-menu {
+    background: #2c3e50;
+    color: white;
+    position: relative;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    position: relative;
+}
+
+.main-menu > ul > li {
+    display: inline-block;
+}
+
+.main-menu a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.main-menu a:hover,
+.main-menu a.active {
+    background: #34495e;
+}
+
+.main-menu li.has-submenu > a::after {
+    content: " ▼";
+    font-size: 0.7em;
+}
+
+.main-menu li ul {
+    display: none;
+    position: absolute;
+    background: #34495e;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.main-menu li.open > ul {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.main-menu li ul.level-2 {
+    left: 100%;
+    top: 0;
+}
+
+/* Бургер меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    margin: 1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    background: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Мобільна версія */
+@media (max-width: 768px) {
+    .main-menu > ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #2c3e50;
+    }
+
+    .main-menu.open > ul {
+        display: flex;
+    }
+
+    .main-menu > ul > li {
+        display: block;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .main-menu li ul {
+        position: static;
+        background: #3c556f;
+    }
+
+    .main-menu li ul.level-2 {
+        left: 0;
+    }
+}
