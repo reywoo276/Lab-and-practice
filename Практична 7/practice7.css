@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'LocalFont';
+    src: url('../fonts/LocalFont.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 2rem;
+    color: #333;
+}
+
+h1 {
+    font-family: 'LocalFont', Georgia, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #ccc;
+}
+
+ul {
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+
+strong {
+    font-weight: bold;
+}
