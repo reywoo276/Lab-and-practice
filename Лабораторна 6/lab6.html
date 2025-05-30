@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фільтрація та сортування</title>
+  <link rel="stylesheet" href="lab6.css" />
+</head>
+<body>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Пошук за назвою..."/>
+
+    <select id="categoryFilter">
+      <option value="">Усі категорії</option>
+      <option value="Електроніка">Електроніка</option>
+      <option value="Одяг">Одяг</option>
+      <option value="Книги">Книги</option>
+    </select>
+
+    <select id="sortBy">
+      <option value="name">Сортувати за назвою</option>
+      <option value="priceAsc">Ціна ↑</option>
+      <option value="priceDesc">Ціна ↓</option>
+    </select>
+
+    <button id="resetFilters">Скинути фільтри</button>
+  </div>
+
+  <div id="active-filters"></div>
+  <div id="items-container"></div>
+
+  <script src="lab6.js"></script>
+</body>
+</html>
