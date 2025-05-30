@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Data</title>
+  <link rel="stylesheet" href="practice6.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Список користувачів</h1>
+
+    <input type="text" id="searchInput" placeholder="Пошук за ім’ям..." />
+
+    <div id="loader" class="hidden">Завантаження...</div>
+
+    <div id="data-container"></div>
+
+    <div id="pagination">
+      <button id="prevPage">Назад</button>
+      <span id="pageNumber">1</span>
+      <button id="nextPage">Вперед</button>
+    </div>
+  </div>
+
+  <script src="practice6.js"></script>
+</body>
+</html>

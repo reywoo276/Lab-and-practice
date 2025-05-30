@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+  }
+  
+  #app {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #loader {
+    color: blue;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .user-card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
